@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calculator
+{% endblock %}
+
+{% block body %}
+	<style>
+		body {
+			background-color: skyblue;
+		}
+		.container {
+			margin: 2em auto;
+			padding: 2em;
+			max-width: 800px;
+			width: 95%;
+			font-size: 18px;
+			font-family: sans-serif;
+		}
+		.form-group {
+			margin-bottom: 1em;
+		}
+		.error {
+			color: red;
+		}
+	</style>
+
+	<div class="container">
+		<h1>Calculator</h1>
+		{{ form_start(form) }}
+		<div class="form-group">
+			{{ form_label(form.num1) }}
+			{{ form_widget(form.num1) }}
+			<div class="error">
+				{{ form_errors(form.num1) }}
+			</div>
+		</div>
+		<div class="form-group">
+			{{ form_label(form.num2) }}
+			{{ form_widget(form.num2) }}
+			<div class="error">
+				{{ form_errors(form.num2) }}
+			</div>
+		</div>
+		<div class="form-group">
+			{{ form_label(form.operation) }}
+			{{ form_widget(form.operation) }}
+			<div class="error">
+				{{ form_errors(form.operation) }}
+			</div>
+		</div>
+		<button type="submit">Calculate</button>
+		{{ form_end(form) }}
+
+		{% if result is not null %}
+			<h2>Result:</h2>
+			<p>First number is
+				{{ num1 }}.</p>
+			<p>Second number is
+				{{ num2 }}.</p>
+			<p>Operation is to
+				{{ operation }}.</p>
+			<p>Result is
+				{{ result }}.</p>
+		{% endif %}
+	</div>
+{% endblock %}
