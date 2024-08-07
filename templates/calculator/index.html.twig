@@ -53,12 +53,12 @@
 
 		{% if result is not null %}
 			<h2>Result:</h2>
-			<p>First number is
+			<p>First Number is
 				{{ num1 }}.</p>
-			<p>Second number is
+			<p>Second Number is
 				{{ num2 }}.</p>
-			<p>Operation is to
-				{{ operation }}.</p>
+			<p>Operation:
+				{{ operation|upper }}.</p>
 			<p>Result is
 				{{ result }}.</p>
 		{% endif %}
