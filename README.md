@@ -28,4 +28,4 @@ http://127.0.0.1:8007
 Bishnu
 
 - GitHub: @Bis10
-- LinkedIn: linkedin.com/in/bishnu-suyel
+- [LinkedIn: linkedin.com/in/bishnu-suyel](https://www.linkedin.com/in/bishnu-suyel/)
