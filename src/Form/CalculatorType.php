@@ -15,7 +15,7 @@ class CalculatorType extends AbstractType
     {
         $builder
             ->add('num1', NumberType::class, [
-                'label' => 'Enter first number:',
+                'label' => 'Enter First Number:',
                 'constraints' => [new NotBlank(['message' => 'Please enter a number'])],
                 'attr' => [
                     'step' => 'any',
@@ -23,7 +23,7 @@ class CalculatorType extends AbstractType
                 ],
             ])
             ->add('num2', NumberType::class, [
-                'label' => 'Enter second number:',
+                'label' => 'Enter Second Number:',
                 'constraints' => [new NotBlank(['message' => 'Please enter a number'])],
                 'attr' => [
                     'step' => 'any',
@@ -37,7 +37,7 @@ class CalculatorType extends AbstractType
                     'Multiply' => 'multiply',
                     'Divide' => 'divide',
                 ],
-                'label' => 'Choose an operation:',
+                'label' => 'Choose an Operation:',
                 'constraints' => [new NotBlank(['message' => 'Please select an operation'])],
             ]);
     }
