@@ -19,9 +19,20 @@
 		.form-group {
 			margin-bottom: 1em;
 		}
-		.error {
+		.error ul {
 			color: red;
+			list-style-type: none;
+			font-size:16px;
 		}
+		.calculate-btn{
+			background-color:green;
+			color:white;
+			padding: 0.5rem;
+			border: none;
+			border-radius:10px;
+
+		}
+
 	</style>
 
 	<div class="container">
@@ -31,24 +42,31 @@
 			{{ form_label(form.num1) }}
 			{{ form_widget(form.num1) }}
 			<div class="error">
+			<ul>
 				{{ form_errors(form.num1) }}
+				</ul>
 			</div>
 		</div>
 		<div class="form-group">
 			{{ form_label(form.num2) }}
 			{{ form_widget(form.num2) }}
 			<div class="error">
+			<ul>
 				{{ form_errors(form.num2) }}
+				</ul>
 			</div>
 		</div>
 		<div class="form-group">
 			{{ form_label(form.operation) }}
 			{{ form_widget(form.operation) }}
 			<div class="error">
+			<ul>
 				{{ form_errors(form.operation) }}
+				</ul>
 			</div>
 		</div>
-		<button type="submit">Calculate</button>
+<button type="submit"   class="calculate-btn">Calculate</button>
+
 		{{ form_end(form) }}
 
 		{% if result is not null %}
