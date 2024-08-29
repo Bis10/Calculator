@@ -1,0 +1,6 @@
+projectKey=calculator1
+serverUrl=http://localhost:8889
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:8889/dashboard?id=calculator1
+ceTaskId=fc4dc907-5f1f-4128-8086-5ced0a175840
+ceTaskUrl=http://localhost:8889/api/ce/task?id=fc4dc907-5f1f-4128-8086-5ced0a175840
