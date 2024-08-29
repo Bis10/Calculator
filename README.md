@@ -1,5 +1,5 @@
 # Simple Calculator Project
-![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=sqp_ffb4aa7a87ed07eb0ed894367ef4295d1ec8032c&metric=alert_status)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=Bis10_Calculator)
 
 This project involves creating a simple calculator using Symfony 7. The calculator will perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
